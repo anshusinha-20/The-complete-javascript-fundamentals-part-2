@@ -302,6 +302,32 @@
 // console.log(tips);
 // console.log(totalBills);
 
+/////
 
+// 42. Introduction to objects
 
+// const date = new Date();
+// const currentYear = date.getFullYear();
 
+// const myProfile = {
+//     firstName: "Anshu",
+//     lastName: "Sinha",
+//     age: currentYear - 2003,
+//     job: "Student"
+// };
+
+// console.log(myProfile);
+
+// Assignment
+
+// 1. Createanobjectcalled'myCountry'foracountryofyourchoice,containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
+
+const myCountry = {
+    country: "India",
+    capital: "New Delhi",
+    language: ["Hindi", "English"],
+    population: `${1407600000 / 1000000} million`,
+    neighbours: ["China", "Pakistan", "Nepal", "Bhutan", "Maldives", "Sri Lanka", "Bangladesh", "Myanmar"]
+}
+
+console.log(myCountry);
