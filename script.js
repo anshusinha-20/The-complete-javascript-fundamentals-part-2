@@ -153,30 +153,31 @@
 // § To check if number A is at least double number B, check for A >= 2 * B.
 // Apply this to the team's average scores 😉 GOOD LUCK 😀
 
-const checkWinner = (avgD, avgK) => {
-    if (avgD >= 2 * avgK) {
-        console.log(`Dolhpins win (${avgD} vs ${avgK})!`);
-    }
-    else if (avgK >= 2 * avgD) {
-        console.log(`Koalas win (${avgK} vs ${avgD})!`);
-    }
-    else {
-        console.log(`No team wins :(`)
-    }
-}
+// const checkWinner = (avgD, avgK) => {
+//     if (avgD >= 2 * avgK) {
+//         console.log(`Dolhpins win (${avgD} vs ${avgK})!`);
+//     }
+//     else if (avgK >= 2 * avgD) {
+//         console.log(`Koalas win (${avgK} vs ${avgD})!`);
+//     }
+//     else {
+//         console.log(`No team wins :(`)
+//     }
+// }
 
-const calcAverage = (d1, d2, d3, k1, k2, k3) => {
-    const avgDolphins = (d1 + d2 + d3) / 3;
-    const avgKoalas = (k1 + k2 + k3) / 3;
-    checkWinner(avgDolphins, avgKoalas);
-}
+// const calcAverage = (d1, d2, d3, k1, k2, k3) => {
+//     const avgDolphins = (d1 + d2 + d3) / 3;
+//     const avgKoalas = (k1 + k2 + k3) / 3;
+//     checkWinner(avgDolphins, avgKoalas);
+// }
 
-const dolphinScore1 = Number(prompt("Enter the first score of dolhphins: "));
-const dolphinScore2 = Number(prompt("Enter the second score of dolhphins: "));
-const dolphinScore3 = Number(prompt("Enter the third score of dolhphins: "));
+// const dolphinScore1 = Number(prompt("Enter the first score of dolhphins: "));
+// const dolphinScore2 = Number(prompt("Enter the second score of dolhphins: "));
+// const dolphinScore3 = Number(prompt("Enter the third score of dolhphins: "));
 
-const koalaScore1 = Number(prompt("Enter the first score of koalas: "));
-const koalaScore2 = Number(prompt("Enter the second score of koalas: "));
-const koalaScore3 = Number(prompt("Enter the third score of koalas: "));
+// const koalaScore1 = Number(prompt("Enter the first score of koalas: "));
+// const koalaScore2 = Number(prompt("Enter the second score of koalas: "));
+// const koalaScore3 = Number(prompt("Enter the third score of koalas: "));
 
-calcAverage(dolphinScore1, dolphinScore2, dolphinScore3, koalaScore1, koalaScore2, koalaScore3);
+// calcAverage(dolphinScore1, dolphinScore2, dolphinScore3, koalaScore1, koalaScore2, koalaScore3);
+
