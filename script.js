@@ -181,3 +181,20 @@
 
 // calcAverage(dolphinScore1, dolphinScore2, dolphinScore3, koalaScore1, koalaScore2, koalaScore3);
 
+// 39. Introduction to arrays
+
+// const friends = ["Avishek", "Ishank", "Aadarsh"];
+// console.log(typeof (friends));
+
+// const numbers = new Array(123, 124, 125);
+// console.log(typeof (numbers));
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[1] = "Aashish";
+// console.log(friends);
+
+// const arr1 = ["Hello", 123 - 13, friends];
+// console.log(arr1);
+
