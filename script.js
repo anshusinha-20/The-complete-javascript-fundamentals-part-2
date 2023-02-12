@@ -197,3 +197,19 @@
 
 // const arr1 = ["Hello", 123 - 13, friends];
 // console.log(arr1);
+
+// Assignment
+
+// 1. Createanarraycontaining4populationvaluesof4countriesofyourchoice. You may use the values you have been using previously. Store this array into a variable called 'populations'
+// 2. Logtotheconsolewhetherthearrayhas4elementsornot(trueorfalse)
+// 3. Createanarraycalled'percentages'containingthepercentagesofthe
+// world population for these 4 population values. Use the function 'percentageOfWorld1' that you created earlier to compute the 4 percentage values
+
+const populations = [1000000, 40000000, 3000000, 32423234];
+const worldPopulation = 7900000000;
+const percentages = [`${(populations[0] / worldPopulation) * 100}%`, `${(populations[1] / worldPopulation) * 100}%`, `${(populations[2] / worldPopulation) * 100}%`, `${(populations[3] / worldPopulation) * 100}%`];
+
+console.log(percentages[0]);
+console.log(percentages[1]);
+console.log(percentages[2]);
+console.log(percentages[3]);
