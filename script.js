@@ -271,35 +271,37 @@
 // Hint: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new array) 😉
 // GOOD LUCK 😀
 
-const calcTip = (bill) => {
-    bills.push(bill);
-    let tip = 0;
-    let totalBill = 0;
-    if (50 < bill < 300) {
-        tip = 0.15 * bill;
-    }
-    else {
-        tip = 0.2 * bill;
-    }
+// const calcTip = (bill) => {
+//     bills.push(bill);
+//     let tip = 0;
+//     let totalBill = 0;
+//     if (50 < bill < 300) {
+//         tip = 0.15 * bill;
+//     }
+//     else {
+//         tip = 0.2 * bill;
+//     }
 
-    tips.push(tip);
-    totalBills.push(bill + tip);
-}
+//     tips.push(tip);
+//     totalBills.push(bill + tip);
+// }
 
-let bills = [];
-let tips = [];
-let totalBills = [];
+// let bills = [];
+// let tips = [];
+// let totalBills = [];
 
-const bill1 = Number(prompt("Enter bill 1: "));
-const bill2 = Number(prompt("Enter bill 2: "));
-const bill3 = Number(prompt("Enter bill 3: "));
+// const bill1 = Number(prompt("Enter bill 1: "));
+// const bill2 = Number(prompt("Enter bill 2: "));
+// const bill3 = Number(prompt("Enter bill 3: "));
 
-calcTip(bill1);
-calcTip(bill2);
-calcTip(bill3);
+// calcTip(bill1);
+// calcTip(bill2);
+// calcTip(bill3);
 
-console.log(bills);
-console.log(tips);
-console.log(totalBills);
+// console.log(bills);
+// console.log(tips);
+// console.log(totalBills);
+
+
 
 
