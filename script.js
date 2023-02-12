@@ -181,6 +181,8 @@
 
 // calcAverage(dolphinScore1, dolphinScore2, dolphinScore3, koalaScore1, koalaScore2, koalaScore3);
 
+/////
+
 // 39. Introduction to arrays
 
 // const friends = ["Avishek", "Ishank", "Aadarsh"];
@@ -213,3 +215,91 @@
 // console.log(percentages[1]);
 // console.log(percentages[2]);
 // console.log(percentages[3]);
+
+/////
+
+// 40. Basic array operations (methods)
+
+// const friends = ["Tim", "Kay", "Alex"];
+// const newLength = friends.push("Jimmie"); // push method returns the new length of the updated array after pushing and element at the end of the array
+// console.log(friends);
+// console.log(newLength);
+
+// friends.unshift("Heroku"); // adds an element to the start of the array and also returns the new length of the array
+// console.log(friends);
+
+// const deletedElement = friends.pop(); // removes an element from the end of the array and also returns the removed element
+// console.log(friends);
+// console.log(deletedElement);
+
+// const removedElement = friends.shift(); // removes an element from the start of the array and also returns the removed element
+// console.log(friends);
+// console.log(removedElement);
+
+// console.log(friends.indexOf("Tim")); // returns the index number of an element of the array
+
+// console.log(friends.includes("Tim")); // return true if the element exists in the array else returns false
+
+// Assignment
+
+// 1. Createanarraycontainingalltheneighbouringcountriesofacountryofyour choice. Choose a country which has at least 2 or 3 neighbours. Store the array into a variable called 'neighbours'
+// 2. Atsomepoint,anewcountrycalled'Utopia'iscreatedintheneighbourhoodof your selected country. So add it to the end of the 'neighbours' array
+// 3. Unfortunately,aftersometime,thenewcountryisdissolved.Soremoveitfrom the end of the array
+// 4. Ifthe'neighbours'arraydoesnotincludethecountry‘Germany’,logtothe console: 'Probably not a central European country :D'
+// 5. Changethenameofoneofyourneighbouringcountries.Todothat,findthe index of the country in the 'neighbours' array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+
+// const neighbours = ["China", "Pakistan", "Sri Lanka", "Bangladesh", "Maldives", "Myanmar", "Bhutan", "Nepal"];
+// neighbours.push("Utopia");
+// neighbours.pop();
+
+// if (!neighbours.includes("Germany")) {
+//     console.log("Probably not a central european country :D");
+// }
+
+// const countryIndex = neighbours.indexOf("China");
+// neighbours[countryIndex] = "Republic of China";
+// console.log(neighbours);
+
+// Coding challenge #2
+
+// Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+// Your tasks:
+// 1. Writeafunction'calcTip'thattakesanybillvalueasaninputandreturns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100
+// 2. Andnowlet'susearrays!Socreateanarray'bills'containingthetestdata below
+// 3. Createanarray'tips'containingthetipvalueforeachbill,calculatedfrom the function you created before
+// 4. Bonus:Createanarray'total'containingthetotalvalues,sothebill+tip Test data: 125, 555 and 44
+// Hint: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new array) 😉
+// GOOD LUCK 😀
+
+const calcTip = (bill) => {
+    bills.push(bill);
+    let tip = 0;
+    let totalBill = 0;
+    if (50 < bill < 300) {
+        tip = 0.15 * bill;
+    }
+    else {
+        tip = 0.2 * bill;
+    }
+
+    tips.push(tip);
+    totalBills.push(bill + tip);
+}
+
+let bills = [];
+let tips = [];
+let totalBills = [];
+
+const bill1 = Number(prompt("Enter bill 1: "));
+const bill2 = Number(prompt("Enter bill 2: "));
+const bill3 = Number(prompt("Enter bill 3: "));
+
+calcTip(bill1);
+calcTip(bill2);
+calcTip(bill3);
+
+console.log(bills);
+console.log(tips);
+console.log(totalBills);
+
+
