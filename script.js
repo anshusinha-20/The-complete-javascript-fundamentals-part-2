@@ -197,4 +197,3 @@
 
 // const arr1 = ["Hello", 123 - 13, friends];
 // console.log(arr1);
-
