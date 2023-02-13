@@ -477,3 +477,21 @@
 // else {
 //     console.log(`${person2.firstName}'s BMI (${Math.round(person2.BMI)}) is higher than ${person1.firstName}'s (${Math.round(person1.BMI)})!`);
 // }
+
+/////
+
+// 46. Iteration: the for loop
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
+
+// Assignment
+
+// 1. Thereareelectionsinyourcountry!Inasmalltown,thereareonly50voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+
+// for (let i = 1; i <= 50; i++) {
+//     console.log(`Voter no.${i} is currently voting.`);
+// }
