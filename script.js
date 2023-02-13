@@ -422,12 +422,7 @@
 //     },
 
 //     checkIsIsland: function () {
-//         if (this.neighbours.length == 0) {
-//             this.isIsland = true;
-//         }
-//         else {
-//             this.isIsland = false;
-//         }
+//         this.neighbours.length == 0 ? this.isIsland = true : this.isIsland = false;
 //     }
 // };
 
@@ -495,3 +490,51 @@
 // for (let i = 1; i <= 50; i++) {
 //     console.log(`Voter no.${i} is currently voting.`);
 // }
+
+/////
+
+// 47. Looping arrays, breaking and continuing
+
+// const myCountry = {
+//     country: "India",
+//     capital: "New Delhi",
+//     population: 1407600000 / 1000000,
+//     language: ["Hindi", "English"],
+//     neighbours: ["China", "Pakistan", "Nepal", "Bhutan", "Bangladesh", "Myanmar", "Sri Lanka", "Maldives"]
+// }
+
+// for (let i = 0; i < myCountry.neighbours.length; i++) {
+//     console.log(myCountry.neighbours[i]);
+// }
+
+// Assignment
+
+// 1. Let'sbringbackthe'populations'arrayfromapreviousassignment
+// 2. Useaforlooptocomputeanarraycalled'percentages2'containingthe
+// percentages of the world population for the 4 population values.Use the
+// function 'percentageOfWorld1' that you created earlier
+// 3. Confirmthat'percentages2'containsexactlythesamevaluesasthe
+// 'percentages' array that we created manually in the previous assignment, and reflect on how much better this solution is
+
+// const myCountry = {
+//     country: "India",
+//     capital: "New Delhi",
+//     population: 1407600000 / 1000000,
+//     language: ["Hindi", "English"],
+//     neighbours: ["China", "Pakistan", "Nepal", "Bhutan", "Bangladesh", "Myanmar", "Sri Lanka", "Maldives"],
+//     neighboursPopulationPercentage: {},
+
+//     calcPopulationPercentage: function (country, poulation) {
+//         this.neighboursPopulationPercentage[country] = `${(poulation / worldPopulation) * 100}%`;
+//     }
+// }
+
+// const populations = [1453810875, 232071607, 30502612, 782455, 168968066, 54179306, 21832143, 523787];
+// const worldPopulation = 8046949318;
+
+// for (let i = 0; i < myCountry.neighbours.length; i++) {
+//     myCountry.calcPopulationPercentage(myCountry.neighbours[i], populations[i]);
+// }
+
+// console.log(myCountry);
+
