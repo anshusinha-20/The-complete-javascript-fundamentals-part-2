@@ -379,3 +379,101 @@
 // console.log(myCountry);
 // myCountry['population'] -= 2;
 // console.log(myCountry);
+
+/////
+
+// 44. Object methods
+
+// const date = new Date();
+// const currentYear = date.getFullYear();
+
+// const myProfile = {
+//     firstName: "Anshu",
+//     lastName: "Sinha",
+//     job: "Student",
+//     birthyear: 2003,
+
+//     calcAge: function () {
+//         this.age = currentYear - this.birthyear; // this keyword is not used in arrow functions
+//     }
+// };
+
+// myProfile.calcAge();
+// console.log(myProfile);
+
+// console.log(`${myProfile.firstName} is ${myProfile.age} years old.`);
+
+// Assignment
+
+// 1. Addamethodcalled'describe'tothe'myCountry'object.Thismethod will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
+// 2. Callthe'describe'method
+// 3. Addamethodcalled'checkIsland'tothe'myCountry'object.This
+// method will set a new property on the object, called 'isIsland'. 'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
+
+// const myCountry = {
+//     country: "India",
+//     capital: "New Delhi",
+//     population: 1407600000 / 1000000,
+//     language: ["Hindi", "English"],
+//     neighbours: ["China", "Pakistan", "Nepal", "Bhutan", "Bangladesh", "Myanmar", "Sri Lanka", "Maldives"],
+
+//     describe: function () {
+//         console.log(`${this.country} has ${this.population} million ${this.language[0]} as well as ${this.language[1]} speaking people, ${this.neighbours.length} neigbouring countries and a capital city called ${this.capital}.`);
+//     },
+
+//     checkIsIsland: function () {
+//         if (this.neighbours.length == 0) {
+//             this.isIsland = true;
+//         }
+//         else {
+//             this.isIsland = false;
+//         }
+//     }
+// };
+
+// myCountry.describe();
+// myCountry.checkIsIsland();
+
+// console.log(myCountry);
+
+// Coding challenge #3
+
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+// Your tasks:
+// 1. Foreachofthem,createanobjectwithpropertiesfortheirfullname,mass,and height (Mark Miller and John Smith)
+// 2. Createa'calcBMI'methodoneachobjecttocalculatetheBMI(thesame method on both objects). Store the BMI value to a property, and also return it from the method
+// 3. LogtotheconsolewhohasthehigherBMI,togetherwiththefullnameandthe respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+// Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+// GOOD LUCK 😀
+
+// const person1 = {
+//     firstName: "Mark",
+//     lastName: "Miller",
+//     weight: 78,
+//     height: 1.69,
+
+//     calcBmi: function () {
+//         this.BMI = this.weight / (this.height ** 2);
+//     }
+// };
+
+// const person2 = {
+//     firstName: "John",
+//     lastName: "Smith",
+//     weight: 92,
+//     height: 1.95,
+
+//     calcBmi: function () {
+//         this.BMI = this.weight / (this.height ** 2);
+//     }
+// };
+
+// person1.calcBmi();
+// person2.calcBmi();
+
+// if (person1.BMI > person2.BMI) {
+//     console.log(`${person1.firstName}'s BMI (${Math.round(person1.BMI)}) is higher than ${person2.firstName}'s (${Math.round(person2.BMI)})!`);
+// }
+// else {
+//     console.log(`${person2.firstName}'s BMI (${Math.round(person2.BMI)}) is higher than ${person1.firstName}'s (${Math.round(person1.BMI)})!`);
+// }
