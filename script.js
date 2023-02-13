@@ -322,12 +322,60 @@
 
 // 1. Createanobjectcalled'myCountry'foracountryofyourchoice,containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
 
-const myCountry = {
-    country: "India",
-    capital: "New Delhi",
-    language: ["Hindi", "English"],
-    population: `${1407600000 / 1000000} million`,
-    neighbours: ["China", "Pakistan", "Nepal", "Bhutan", "Maldives", "Sri Lanka", "Bangladesh", "Myanmar"]
-}
+// const myCountry = {
+//     country: "India",
+//     capital: "New Delhi",
+//     language: ["Hindi", "English"],
+//     population: `${1407600000 / 1000000} million`,
+//     neighbours: ["China", "Pakistan", "Nepal", "Bhutan", "Maldives", "Sri Lanka", "Bangladesh", "Myanmar"]
+// }
 
-console.log(myCountry);
+// console.log(myCountry);
+
+/////
+
+// 43. Dot vs bracket notation
+
+// const date = new Date();
+// const currentYear = date.getFullYear();
+
+// const myProfile = {
+//     firstName: "Anshu",
+//     lastName: "Sinha",
+//     age: currentYear - 2003,
+//     job: "Student"
+// };
+
+// console.log(myProfile.firstName);
+// console.log(myProfile['firstName']);
+
+// myProfile.firstName = 'Sahil';
+// console.log(myProfile.firstName);
+// console.log(myProfile);
+
+// myProfile.firstName = 'Anshu';
+// console.log(myProfile.firstName);
+
+// myProfile.twitter = 'https://twitter.com/anshusinha_20';
+// console.log(myProfile);
+
+// console.log(`${myProfile.firstName} is a ${myProfile.job} and his age is ${myProfile.age} years.`);
+
+// Assignment
+
+// 1. Usingtheobjectfromthepreviousassignment,logastringlikethistothe console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.'
+// 2. Increasethecountry'spopulationbytwomillionusingdotnotation,andthen decrease it by two million using brackets notation.
+
+// const myCountry = {
+//     country: "India",
+//     capital: "New Delhi",
+//     population: 1407600000 / 1000000,
+//     language: ["Hindi", "English"],
+//     neighbours: ["China", "Pakistan", "Nepal", "Bhutan", "Bangladesh", "Myanmar", "Sri Lanka", "Maldives"]
+// }
+
+// console.log(`${myCountry.country} has ${myCountry.population} million people, ${myCountry.neighbours.length} neigbouring countries and a capital city called ${myCountry.capital}.`);
+// myCountry.population += 2;
+// console.log(myCountry);
+// myCountry['population'] -= 2;
+// console.log(myCountry);
